@@ -1,0 +1,18 @@
+{
+  "name": "angfront",
+  "version": "1.0.0",
+  "description": "angular 14 frontend consuming api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular14",
+    "singlePageApplication"
+  ],
+  "author": "Dinesh Selvam",
+  "license": "MIT license",
+  "dependencies": {
+    "@angular/cli": "^14.2.10"
+  }
+}
