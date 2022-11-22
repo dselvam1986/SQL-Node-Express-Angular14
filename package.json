@@ -14,5 +14,9 @@
   "license": "MIT license",
   "dependencies": {
     "@angular/cli": "^14.2.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dselvam1986/SQL-Node-Express-Angular14.git"
   }
 }
