@@ -1,0 +1,44 @@
+<div>
+    <div class="center">
+        <form>
+            <div class="col searchFilter">
+                <label for="table-filter-search">Full text search:</label>
+                <input id="table-filter-search" class="form-control" type="text" [formControl]="filter" />
+            </div>
+        </form>
+    </div>
+    <div>
+
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <td> Id</td>
+                    <td> First Name </td>
+                    <td> Last Name </td>
+                    <td> Birth Date </td>
+                    <td> Phone </td>
+                    <td> Address </td>
+                    <td> City </td>
+                    <td> State </td>
+                    <td> Points </td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let cust of customerOb | async">
+                    <tr>
+                        <td> {{cust.customer_id}}</td>
+                        <td> {{cust.first_name}}</td>
+                        <td> {{cust.last_name}}</td>
+                        <td> {{cust.birth_date | date:'shortDate'}}</td>
+                        <td> {{cust.phone}}</td>
+                        <td> {{cust.address}}</td>
+                        <td> {{cust.city}}</td>
+                        <td> {{cust.state}}</td>
+                        <td> {{cust.points}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+
+        </table>
+    </div>
+</div>

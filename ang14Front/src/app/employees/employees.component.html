@@ -1,0 +1,38 @@
+<div>
+    <div class="center">
+        <form>
+            <div class="col searchFilter">
+                <label for="table-filter-search">Full text search:</label>
+                <input id="table-filter-search" class="form-control" type="text" />
+            </div>
+        </form>
+    </div>
+    <div>
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <td> Id</td>
+                    <td> First Name </td>
+                    <td> Last Name </td>
+                    <td> Job Title </td>
+                    <td> Salary </td>
+                    <td> Reports To </td>
+                    <td> Office Id </td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let emp of employees">
+                    <tr>
+                        <td> {{emp.employee_id}}</td>
+                        <td> {{emp.first_name}}</td>
+                        <td> {{emp.last_name}}</td>
+                        <td> {{emp.job_title}}</td>
+                        <td> {{emp.salary}}</td>
+                        <td> {{emp.reports_to}}</td>
+                        <td> {{emp.office_id}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>

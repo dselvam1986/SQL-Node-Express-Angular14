@@ -2,7 +2,7 @@ const { readFileSync } = require('fs');
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-// const cors = require('cors');
+const cors = require('cors');
 // const logger = require('./logger');
 const dotenv = require('dotenv').config({ path: './config/.env' });
 // files
@@ -19,7 +19,7 @@ const app = express();
 app.use(express.json());
 // app.use(express.static('./public'));
 app.use(morgan('tiny'));
-// app.use(cors());
+app.use(cors());
 
 /**
  * app.use(logger) if you want middleware to apply to all
