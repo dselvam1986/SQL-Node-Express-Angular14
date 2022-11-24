@@ -24,7 +24,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Angular 14 - 
+### Angular 14 -
+
 Enter the Ang14Front Folder and follow steps.
 
-API
+### API
+
+Enter api folder and follow steps.
+
+### MySQL
+
+upcoming with the sql scripts to create tables and load with info.
