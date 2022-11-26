@@ -18,8 +18,6 @@ and others I havent thought of yet.
 
 Will be updating......
 
-This is strictly for my training purpose. Bored while job Hunting.
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14
 
 ## Development server
